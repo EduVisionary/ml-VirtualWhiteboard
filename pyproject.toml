@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "virtual_whiteboard"
+version = "0.1.0"
+description = "An prototype for virtual whiteboard accepting hand gestures, made in Python"
+authors = ["Lab Rat <dev.frolics@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+mediapipe = "^0.10.7"
+opencv-python = "^4.8.1.78"
+numpy = "^1.26.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+whiteboard = "virtual_whiteboard.virtual_painter:main"
